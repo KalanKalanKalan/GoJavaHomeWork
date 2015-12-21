@@ -1,0 +1,96 @@
+public class Home_task_3_1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	class File
+	{
+		int size;
+		keep_info()
+		{
+			
+		}
+		show_info()
+		{
+			
+		}
+		
+	}
+	class pictureFile extends File {}
+	class audioFile extends File {}
+	class textFile extends File {}
+	class directory 
+	{
+		int size;
+		pictureFile picture = new pictureFile();
+		audioFile audio = new audioFile();
+		textFile text = new textFile();
+		keep_file(){}
+		show_file(){}
+		
+		
+	}
+}
+
+public class Home_task_3_2 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	class Flower
+	{
+		String color;
+		int age;
+		int size;
+		String smell;
+		blossom(){}
+		grow(){}
+		smell(){}
+	}
+	class rose extends Flower{}
+	class chamomile extends Flower{}
+	class aster extends Flower{}
+	class tulip extends Flower{}
+	class rosebush extends Flower{}
+	
+	class bouquet 
+	{
+		rose f1 = new rose();
+		chamomile f2 = new chamomile();
+		aster f3 = new aster();
+		tulip f4 = new tulip();
+		rosebush f5 = rosebush();		
+		int size;
+		keep_flowers(){}
+		
+	}
+}
+
+
+public class Home_task_3_3 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	class music_Instrument
+	{
+		String color;
+		String material;
+		int size;
+		play(){}
+	}
+	class guitar extends music_Instrument {}
+	class piano extends music_Instrument {}
+	class trumpet extends music_Instrument {}
+	class musical_Shop
+	{
+		int size;
+		sell_instruments(){}
+		guitar m1 = new guitar();
+		piano m2 = new piano();
+		trumpet m3 = new trumpet();
+	}
+}
