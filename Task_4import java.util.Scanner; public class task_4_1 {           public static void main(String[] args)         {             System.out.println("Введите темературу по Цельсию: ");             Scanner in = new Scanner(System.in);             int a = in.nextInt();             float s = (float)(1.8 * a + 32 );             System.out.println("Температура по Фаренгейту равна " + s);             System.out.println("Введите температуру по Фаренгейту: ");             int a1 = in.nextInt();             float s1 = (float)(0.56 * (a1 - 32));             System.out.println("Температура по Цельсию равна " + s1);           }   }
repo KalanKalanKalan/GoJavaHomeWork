@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class task_4_1 {
+
+
+        public static void main(String[] args)
+        {
+            System.out.println("Введите сторону и высоту треуголника: ");
+            Scanner in = new Scanner(System.in);
+            int a = in.nextInt();
+            int h = in.nextInt();
+            float s = (float)(0.5 * a + h);
+            System.out.println("Площадь треугольника равна " + s);
+            System.out.println("Введите две стороны прямоугольника: ");
+            int a1 = in.nextInt();
+            int b1 = in.nextInt();
+            float s1 = (float)(a1 * b1);
+            System.out.println("Площадь прямоугольника равна " + s1);
+            System.out.println("Введите радиус круга: ");
+            int r = in.nextInt();
+            float s2 = (float)(3.14 * r * r);
+            System.out.println("Площадь круга равна " + s2);
+
+        }
+
+
+}
+
+import java.util.Scanner;
+public class task_4_2 {
+
+
+        public static void main(String[] args)
+        {
+            System.out.println("Введите температуру по Цельсию: ");
+            Scanner in = new Scanner(System.in);
+            int x1 = in.nextInt();
+            float l = (float)(1.8 * x1 +   32);
+            System.out.println("Температура по Фаренгейту равна " + l);
+            System.out.println("Введите температуру по Фаренгейту: ");
+            int x2 = in.nextInt();
+            float l1 = (float)(0.56 * (x2 -  32));
+            System.out.println("Температура по Цельсию равна " + l1);
+
+
+
+        }
+
+
+}
+
+
+import java.util.Scanner;
+public class task_4_3 {
+
+
+        public static void main(String[] args)
+        {
+            System.out.println("Введите координаты точек: ");
+            Scanner in = new Scanner(System.in);
+            int x1 = in.nextInt();
+            int y1 = in.nextInt();
+            int x2 = in.nextInt();
+            int y2 = in.nextInt();
+            float l = (float)(Math.sqrt(Math.pow((x2-x1),2) + Math.pow((y2 - y1),2)));
+            System.out.println("Расстояние между точками равно " + l);
+
+
+
+        }
+
+
+}
+
