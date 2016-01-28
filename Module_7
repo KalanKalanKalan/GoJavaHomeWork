@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class HT_3_2 {
+
+
+        public static void main(String[] args) {
+            int MagicNamber = 1348;// анти-паттерн "Магическое число"; число не имеет значения поэтому его надо удалить или обосновать.
+            System.out.println("Hello, please enter bouquet amount: ");
+            Scanner sc = new Scanner(System.in);
+            String a = sc.next();
+            try
+            {
+                int amount = Integer.parseInt(a);
+                System.out.println("Your bouquet will have " + amount + " flowers");
+            } catch (NumberFormatException ex)
+            {
+                System.out.println("[ERROR]: you enter bullshit!");
+            }
+
+        }
+        class Flower
+        {
+            String color;
+            int age;// анти-паттерн "якорь"; решение - создать метод который задает значение и использует эту переменную;
+            int size;
+            String smell;
+            void blossom(){}
+            void grow(){}
+            void smell(){}
+        }
+        class rose extends Flower{}
+        class chamomile extends Flower{}
+        class aster extends Flower{}
+        class tulip extends Flower{}
+        class rosebush extends Flower{}
+
+        class bouquet
+        {
+            rose f1 = new rose();
+            chamomile f2 = new chamomile();
+            aster f3 = new aster();
+            tulip f4 = new tulip();
+            rosebush f5 = new rosebush();
+            int size ;
+            void keep_flowers(){}
+
+        }
+    }
