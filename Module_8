@@ -1,0 +1,35 @@
+package flowers_list;
+
+
+public class flowerMain {
+    public static void main(String[] args) {
+        Flower[] flowerList = new Flower[5];
+        flowerList[0] = new Flower("Rose","Red",10,"Nice Smell");
+        flowerList[1] = new Flower("Chamomile","White",7,"Strong Smell");
+        flowerList[2] = new Flower("Aster","Blue",8,"Weak Smell");
+        flowerList[3] = new Flower("Tulip","Yellow",7,"Special Smell");
+        flowerList[4] = new Flower("Rosebush","Orange",5,"Nice Smell");
+
+        for (int i = 0; i < flowerList.length; i++)
+        {
+            System.out.println( flowerList[i].name + " " + flowerList[i].color + " " + flowerList[i].height + " " + flowerList[i].smell);
+        }
+
+
+
+
+    }
+   public static class Flower
+    {
+        public String name = null;
+        public String color = null;
+        public int height = 0;
+        public String smell = null;
+        public Flower(String name, String color, int height, String smell)
+        {
+          this.name = name;
+          this.color = color;
+          this.height = height;
+          this.smell = smell;
+        }
+    }
